@@ -1,0 +1,104 @@
+body {
+  background-color: rgb(255, 228, 196);
+}
+.navigation {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  width: 250px;
+  height: 100vh;
+  box-shadow: 2px 0 5px #ddd;
+  transition: 1s;
+}
+.navigation.hidden {
+  left: -600px;
+}
+.nav-header {
+  padding: 20px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.logo {
+  width: 250px;
+}
+.logo img {
+  width: 168px;
+}
+.closeBtn {
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+.closeBtn svg {
+  width: 100%;
+  height: 100%;
+}
+.closeBtn svg:hover {
+  color: slateblue;
+}
+.menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.menu li {
+  width: 100%;
+  height: 50px;
+  padding-left: 20px;
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #333;
+  text-transform: uppercase;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.menu li:hover {
+  color: #fff;
+  background-color: slateblue;
+  padding-left: 30px;
+}
+.navToggleBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+}
+.navToggleBtn svg {
+  width: 100%;
+  height: 100%;
+  color: slateblue;
+  transform: rotate(90deg);
+  transition: 1s;
+}
+
+@media screen and (max-width: 569px) {
+  .navigation {
+    width: 100%;
+  }
+  .nav-header {
+    width: 100%;
+    justify-content: space-between;
+  }
+  /* .logo {
+    width: 168px;
+  } */
+  .navToggleBtn {
+    display: none;
+  }
+}
