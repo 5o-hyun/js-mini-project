@@ -1,7 +1,6 @@
 const body = document.getElementsByTagName("BODY")[0];
 
 const addModal = (messageTitle, messageDesc) => {
-  // console.log(messageTitle, messageDesc);
   const addmodalContainer = document.createElement("div");
   addmodalContainer.setAttribute("class", "modalContainer");
   const addmodalContents = document.createElement("div");
