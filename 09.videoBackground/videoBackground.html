@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>videoBackground</title>
+    <link rel="stylesheet" href="../common/reset.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./videoBackground.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="videoContainer">
+        <video class="video" autoplay loop muted>
+          <source
+            src="https://www.w3schools.com/howto/rain.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </section>
+      <section class="contentsContainer">
+        <h1 class="title">video background project</h1>
+        <div class="controlBox">
+          <div class="onoffswitch">
+            <input
+              type="checkbox"
+              name="onoffswitch"
+              class="onoffswitch-checkbox"
+              id="myonoffswitch"
+              checked
+            />
+            <label
+              class="onoffswitch-label"
+              for="myonoffswitch"
+              onclick="videoControl()"
+            >
+              <div class="onoffswitch-inner"></div>
+              <div class="onoffswitch-switch"></div>
+            </label>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+  <script type="text/javascript" src="./videoBackground.js"></script>
+</html>
