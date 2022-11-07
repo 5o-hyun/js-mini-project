@@ -81,17 +81,26 @@ function displayMenuItem(menuItems) {
 }
 
 const categoryBtns = document.querySelectorAll(".category");
+categoryBtns[0].classList.add("active"); /* 처음 버튼 active */
 
 categoryBtns.forEach((btn) => {
   btn.addEventListener("click", function (e) {
+    /* 버튼 active 제거및추가 */
+    for (let i = 0; i < btn.parentNode.children.length; i++) {
+      btn.parentNode.children[i].classList.remove("active");
+    }
+    btn.classList.add("active");
+
+    /* 클릭한카테고리랑 일치하는객체를, 새로운배열로반환*/
     const category = e.target.dataset.id;
     const menuCategory = menu.filter((menu) => {
-      console.log(menu.category);
       if (menu.category === category) {
         return menu;
       }
     });
-    console.log(menuCategory);
+    // console.log(menuCategory);
+
+    /* all선택시 객체전체넣기, 개별메뉴선택시 새로맞춘배열객체넣기 */
     if (category === "all") {
       displayMenuItem(menu);
     } else {
