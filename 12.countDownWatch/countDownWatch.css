@@ -1,0 +1,42 @@
+body {
+  background-color: darkblue;
+}
+.container {
+  width: 1000px;
+  margin: 200px auto;
+  display: flex;
+  gap: 60px;
+}
+.container img {
+  flex: 1;
+}
+.textContainer {
+  color: #fff;
+}
+.textContainer h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.textContainer h2 {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.countContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  gap: 10px;
+}
+.box {
+  background-color: #000;
+  flex: 1;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box b {
+  font-size: 30px;
+}
