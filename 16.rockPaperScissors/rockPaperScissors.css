@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "KNPSKkomi-Regular00";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/KNPSKkomi-Regular00.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "KNPSKkomi-Regular00";
+  background-color: peachpuff;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+h1 span {
+  text-decoration: underline;
+  text-underline-offset: 15px;
+}
+.contentsWrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.personBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.imgBox {
+  width: 300px;
+  height: 300px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  border: 10px solid salmon;
+  background: url(./images/gawebawebo.png) no-repeat;
+  background-size: 270%;
+  background-position: 36px 30px;
+  /* background-position: -220px 10px; */
+  /* background-position: -490px 10px; */
+}
+.btnGroup {
+  display: flex;
+  gap: 2rem;
+}
+button {
+  border: none;
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  background: url(./images/gawebawebo.png) no-repeat;
+  background-size: 300%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+button:hover {
+  transform: scale(1.1);
+}
+button.rock {
+  background-position: -96px 0;
+}
+button.paper {
+  background-size: 290%;
+  background-position: -190px 0;
+}
+button.scissors {
+  background-position: 10px 0;
+}
