@@ -13,6 +13,7 @@ let imgPositionY = {
 let position = imgPositionX.paper;
 let positionY = imgPositionY.paper;
 
+// 자동으로 그림돌아가게
 let timeImgBox;
 function timeImgBoxFn() {
   timeImgBox = setInterval(function () {
@@ -36,16 +37,20 @@ const btn = document.querySelectorAll(".btn");
 const computerTotalScore = document.querySelector(".computerScore");
 const userTotalScore = document.querySelector(".userScore");
 
+// computer와 user의 점수
 let computerScore = 0;
 let userScore = 0;
 
 btn.forEach((btn) => {
   btn.addEventListener("click", function (e) {
+    // 클릭시 돌아가는 그림 멈췄다가,
     clearInterval(timeImgBox);
+    // 1초후 다시실행
     setTimeout(function () {
       timeImgBoxFn();
     }, 1000);
 
+    // user가 클릭한버튼과, computer의 이미지포지션값을 비교하여  => 이긴것과 진것을 구분
     userFix = e.target.textContent;
     computerFix = imgBox.style.backgroundPosition;
 
@@ -92,6 +97,7 @@ btn.forEach((btn) => {
         userScore;
       }
     }
+    // 계산한값을 computer와 user에게 부여
     computerTotalScore.textContent = computerScore;
     userTotalScore.textContent = userScore;
   });
