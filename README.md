@@ -61,3 +61,18 @@ play, pause 기능을 이영해 영상배경을 만듬<br/>
 카운트다운 시계 만들기. 전자상거래사이트에서 새로운 제품이 출시되거나 할인이 종료될때 사용할 수 있는 기능 구현<br/>
 -> 객체, document.querySelectorAll(), forEach(), classList.add(), classList.remove(), document.setAttribute, textContent
 <br/><br/>
+
+**13. loremIpsum**<br/>
+웹 사이트에서 사용할 수 있는 더미 텍스트 lorem ipsum 구현<br/>
+-> parseInt(), Math.floor(), Math.random(), isNaN(), innerHTML, slice, join, forEach(), textContent, appendChild, select(), execCommand, removeChild, alert
+<br/><br/>
+
+**14. todoList**<br/>
+할일을 추가하고 체크하고 삭제기능구현<br/>
+-> document.querySelector(), document.createElement, setAttribute, textContent, appendChild, removeChild, e.target
+<br/><br/>
+
+**15. slider**<br/>
+첫번째장에 prev버튼이없고 마지막장에 next버튼이없는 슬라이더구현<br/>
+-> 객체, document.querySelector(), setAttribute, appendChild, map, addEventListener, document.style.transform
+<br/><br/>
