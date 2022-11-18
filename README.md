@@ -85,3 +85,11 @@ play, pause 기능을 이영해 영상배경을 만듬<br/>
 돌아가는그림을만든다 / 버튼3개를만든다 -> 버튼클릭 -> 돌아가는그림멈춘다 -> 계산 -> 표시 -> 그림다시돌아감 -> 대기<br/>
 -> document.style.backgroundPositionX and Y, setInterval, forEach(), addEventListener, clearInterval, setTimeout, textContent
 <br/><br/>
+
+**17. lotto**<br/>
+로또추첨을하면 번호가 오름차순으로 1초마다 보여진다.<br/>
+
+[구현방법]<br/>
+1-45의 숫자를 만든다 -> 랜덤으로 숫자섞기 -> 로또숫자뽑기(섞은배열의 앞 6개의요소) -> 추출된숫자 화면출력 -> 1초에 하나씩 숫자를 보여줌<br/>
+-> 
+<br/><br/>
