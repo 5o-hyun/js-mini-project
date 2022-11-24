@@ -90,6 +90,6 @@ play, pause 기능을 이영해 영상배경을 만듬<br/>
 로또추첨을하면 번호가 오름차순으로 1초마다 보여진다.<br/>
 
 [구현방법]<br/>
-1-45의 숫자를 만든다 -> 랜덤으로 숫자섞기 -> 로또숫자뽑기(섞은배열의 앞 6개의요소) -> 추출된숫자 화면출력 -> 1초에 하나씩 숫자를 보여줌<br/>
--> 
+1-45의 숫자를 만든다 -> 랜덤으로 숫자섞기 -> 로또숫자뽑기(섞은배열의 앞 6개의요소) -> 추출된숫자 화면출력 <br/>
+-> while, for, array.length, splice, includes, push, sort, setAttribute, forEach, innerHTML, appendChild, textContent
 <br/><br/>
